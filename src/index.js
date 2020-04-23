@@ -1,10 +1,11 @@
 import "./math";
+import text from "./demo.text";
 var body = document.querySelector("body");
 
 const child = () => {
     const div = document.createElement("div");
     div.style = "width:100px;height:100px;background:red;cursor: pointer;";
-    // div.innerHTML = add(1, 2);
+    div.innerHTML = text;
     div.onclick = handleClick;
     return div;
 };
